@@ -1,0 +1,11 @@
+.main {
+  display: grid;
+  grid-template-areas: 
+    "pagination pagination"
+    "form asaid";
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 100px;
+  margin: 0 auto;
+
+  width: 1400px;
+}

@@ -1,0 +1,6 @@
+.app {
+  margin: 0 auto;
+  width: 1440px;
+  min-height: 100vh;
+  background-color: #ededed;
+}
