@@ -1,0 +1,25 @@
+.container {
+  margin: 15px 0 0;
+  padding: 10px 0 10px 10px;
+
+  font-size: 12px;
+  line-height: 1.2;
+  width: 65%;
+
+  border-top: 1px solid rgba(0, 0, 0, .2);
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  list-style-type: ' - ';
+}
+
+.item {
+  padding: 5px 0;
+}
+
+.link {
+  margin: 0;
+  padding: 0;
+
+  color: green;
+  text-decoration: none;
+  opacity: .6;
+}

@@ -1,0 +1,39 @@
+.container {
+  margin: 20px auto 0;
+  padding: 0;
+  height: 30px;
+  overflow-y: hidden;
+}
+
+.container_opened {
+  composes: container;
+  height: fit-content;
+}
+
+.button {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  background-color: inherit;
+  border: none;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 7px;
+  height: 7px;
+  top: 0;
+  right: -20px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  transform: rotate(135deg);
+  transition: transform .5s ease;
+}
+
+.button_opened:after {
+  transform: rotate(-45deg);
+  top: 7px;
+}
