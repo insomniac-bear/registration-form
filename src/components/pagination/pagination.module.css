@@ -1,0 +1,50 @@
+.container {
+  grid-area: pagination;
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 20px 0;
+  width: 100%;
+
+  list-style: none;
+}
+
+.item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  width: 24px;
+  height: 24px;
+
+  border: 4px solid green;
+  border-radius: 50%;
+  transition: background-color .5s ease;
+  box-sizing: border-box;
+}
+
+.item:before {
+  content: "";
+  position: absolute;
+  width: 665px;
+  height: 5px;
+  background-color: green;
+  top: calc(50% - 2px);
+  right: 20px;
+  opacity: .2;
+  transition: opacity .5s ease;
+}
+
+.item:first-child:before {
+  display: none;
+}
+
+.item_type_active {
+  composes: item;
+  background-color: green;
+}
+
+.item_type_active:before {
+  opacity: 1;
+}
