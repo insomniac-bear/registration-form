@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from '../header/header';
 import Title from '../title/title';
 import Main from '../main/main';

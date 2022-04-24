@@ -1,13 +1,13 @@
-import { FC, useState } from 'react';
+import React from 'react';
 import ScaledBlock from '../scaled-block/scaled-block';
 import Examples from '../examples/examples';
 import Requirements from '../requirements/requirements';
 import { IReferenceProps } from './reference.props';
 import referenceStyles from './reference.module.css';
 
-const Reference: FC<IReferenceProps> = (): JSX.Element => {
-  const [requirementsState, setRequirementsState] = useState(false);
-  const [examplesState, setExamplesState] = useState(false);
+const Reference: React.FC<IReferenceProps> = (): JSX.Element => {
+  const [requirementsState, setRequirementsState] = React.useState(false);
+  const [examplesState, setExamplesState] = React.useState(false);
 
   const toggleRequirementsState = () => {
     if (examplesState) {

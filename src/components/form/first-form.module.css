@@ -1,0 +1,46 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.label {
+  width: 60%;
+}
+
+.input {
+  padding: 5px;
+  width: 60%;
+  border: none;
+}
+
+.input_error {
+  composes: input;
+  border: 1px solid red;
+}
+
+.error_message {
+  color: red;
+}
+
+.input_file {
+  display: none;
+}
+
+.label_file {
+  margin: 10px 0 10px 0;
+  padding: 5px 15px;
+  width: fit-content;
+  color: green;
+  border: 1px solid green;
+  cursor: pointer;
+}
+
+.submit {
+  composes: label_file;
+  color: #fff;
+  text-decoration: none;
+  background-color: green;
+}

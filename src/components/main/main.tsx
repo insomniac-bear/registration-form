@@ -1,15 +1,15 @@
-import { FC } from 'react';
+import React from 'react';
 import Pagination from '../pagination/pagination';
 import Asaid from '../asaid/asaid';
 import { IMainProps } from './main.props';
 import mainStyles from './main.module.css';
-import Form from '../form/form';
+import FormSection from '../form-section/form-section';
 
-const Main: FC<IMainProps> = (): JSX.Element => {
+const Main: React.FC<IMainProps> = (): JSX.Element => {
   return(
     <main className={mainStyles.main}>
       <Pagination />
-      <Form />
+      <FormSection />
       <Asaid />
     </main>
   );

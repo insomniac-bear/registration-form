@@ -1,10 +1,10 @@
-import { FC } from 'react';
+import React from 'react';
 import Title from '../title/title';
 import { IPluginProps } from './plugin.props';
 import logoPath from '../../images/gis.png';
 import pluginStyles from './plugin.module.css';
 
-const Plugin: FC<IPluginProps> = (): JSX.Element => {
+const Plugin: React.FC<IPluginProps> = (): JSX.Element => {
   return (
     <div className={pluginStyles.container}>
       <img

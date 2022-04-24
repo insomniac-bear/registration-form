@@ -1,8 +1,8 @@
-import { FC } from 'react';
+import React from 'react';
 import { IPaginationProps } from './pagination.props';
 import paginationStyles from './pagination.module.css';
 
-const Pagination: FC<IPaginationProps> = ():JSX.Element => {
+const Pagination: React.FC<IPaginationProps> = ():JSX.Element => {
 
   return (
     <ul className={paginationStyles.container}>

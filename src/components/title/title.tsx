@@ -1,8 +1,8 @@
-import { FC } from 'react';
+import React from 'react';
 import { ITitleProps } from './title.props';
 import titleStyles from './title.module.css';
 
-const Title: FC<ITitleProps> = ({ className, tag, children }): JSX.Element => {
+const Title: React.FC<ITitleProps> = ({ className, tag, children }): JSX.Element => {
   switch (tag) {
     case 'h1':
       return <h1 className={`${titleStyles.title} ${className}`}>{children}</h1>;

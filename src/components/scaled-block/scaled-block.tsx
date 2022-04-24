@@ -1,8 +1,8 @@
-import { FC } from 'react';
+import React from 'react';
 import { IScaledBlockProps } from './scaled-block.props';
 import scaledBlockStyles from './scaled-block.module.css';
 
-const ScaledBlock: FC<IScaledBlockProps> = ({ name, isOpen, children, toggleState }): JSX.Element => {
+const ScaledBlock: React.FC<IScaledBlockProps> = ({ name, isOpen, children, toggleState }): JSX.Element => {
   return (
     <div className={isOpen ? scaledBlockStyles.container_opened : scaledBlockStyles.container}>
       <button

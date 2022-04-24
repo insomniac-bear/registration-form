@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React from 'react';
 import { IExamplesProps } from './examples.props';
 import examplesStyles from './examples.module.css';
 
@@ -50,7 +50,7 @@ const examplesData= [
   }
 ];
 
-const Examples: FC<IExamplesProps> = (): JSX.Element => {
+const Examples: React.FC<IExamplesProps> = (): JSX.Element => {
   return (
     <ul className={examplesStyles.container}>
       {

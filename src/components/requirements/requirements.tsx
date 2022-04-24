@@ -1,8 +1,8 @@
-import { FC } from 'react';
+import React from 'react';
 import { IRequirementsProps } from './requirements.props';
 import requirementsStyle from './requirements.module.css';
 
-const Requirements: FC<IRequirementsProps> = (): JSX.Element => {
+const Requirements: React.FC<IRequirementsProps> = (): JSX.Element => {
   return (
     <div className={requirementsStyle.container}>
       <p className={requirementsStyle.text}>Для корректной работы на электронной торговой площадке B2B-Center на вашем рабочем компьютере должно быть установлено следующее программное обеспечение:</p>
