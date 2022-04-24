@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Reference from '../../reference/reference';
+import Reference from '../reference/reference';
 import Plugin from '../plugin/plugin';
 import { IAsaidProps } from './asaid.props';
 import asaidStyles from './asaid.module.css';

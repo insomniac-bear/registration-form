@@ -1,7 +1,7 @@
 import { FC, useState } from 'react';
-import ScaledBlock from '../components/scaled-block/scaled-block';
-import Examples from '../components/examples/examples';
-import Requirements from '../components/requirements/requirements';
+import ScaledBlock from '../scaled-block/scaled-block';
+import Examples from '../examples/examples';
+import Requirements from '../requirements/requirements';
 import { IReferenceProps } from './reference.props';
 import referenceStyles from './reference.module.css';
 
