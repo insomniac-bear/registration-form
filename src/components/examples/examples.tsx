@@ -54,8 +54,8 @@ const Examples: FC<IExamplesProps> = (): JSX.Element => {
   return (
     <ul className={examplesStyles.container}>
       {
-        examplesData.map(example => 
-          <li className={examplesStyles.item}>
+        examplesData.map((example, index) => 
+          <li key={index} className={examplesStyles.item}>
             <a
               href={example.link}
               className={examplesStyles.link}
